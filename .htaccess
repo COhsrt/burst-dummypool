@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([\d]+) index.php?scoop=$1
+RewriteRule . index.php [L]
+DirectorySlash Off
+
